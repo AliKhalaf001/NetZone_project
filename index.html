@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Net Zone - باقات الإنترنت والاتصالات المتكاملة</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Tajawal', 'sans-serif'],
+                    },
+                    colors: {
+                        darkBg: '#090D16',
+                        cardBg: 'rgba(17, 24, 39, 0.7)',
+                        cyanGlow: '#00F0FF',
+                        purpleGlow: '#A855F7',
+                        orangeGlow: '#F97316',
+                        emeraldGlow: '#10B981',
+                        blueGlow: '#3B82F6',
+                    },
+                    boxShadow: {
+                        'neon-purple': '0 0 20px rgba(168, 85, 247, 0.25)',
+                        'neon-orange': '0 0 20px rgba(249, 115, 22, 0.25)',
+                        'neon-emerald': '0 0 20px rgba(16, 185, 129, 0.25)',
+                        'neon-blue': '0 0 20px rgba(59, 130, 246, 0.25)',
+                        'neon-cyan': '0 0 25px rgba(0, 240, 255, 0.3)',
+                        'neon-group': '0 0 25px rgba(34, 197, 94, 0.4)',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background-color: #080C14;
+            color: #F3F4F6;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .cyber-bg {
+            background-image: 
+                radial-gradient(circle at 50% 20%, rgba(0, 240, 255, 0.06) 0%, transparent 50%),
+                radial-gradient(circle at 80% 70%, rgba(168, 85, 247, 0.05) 0%, transparent 40%);
+            background-size: 100% 100%;
+        }
+
+        .glass-card {
+            background: rgba(15, 23, 42, 0.85);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            transform: translateZ(0);
+        }
+
+        ::-webkit-scrollbar {
+            width: 5px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #080C14;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #1E293B;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+
+<body class="cyber-bg min-h-screen flex flex-col justify-between selection:bg-cyan-500 selection:text-black">
+
+    <header class="sticky top-0 z-40 border-b border-gray-800/80 glass-card">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="relative w-11 h-11 flex items-center justify-center bg-gradient-to-br from-cyan-500/20 to-blue-600/20 rounded-xl border border-cyan-500/40">
+                    <i class="fa-solid font-bold fa-cube text-2xl text-cyan-400"></i>
+                </div>
+                <div class="flex flex-col">
+                    <span class="text-2xl font-black tracking-wider text-white flex items-center gap-1" dir="ltr">
+                        <span>NET</span> <span class="text-cyan-400">ZONE</span>
+                    </span>
+                    <span class="text-[10px] text-gray-400 tracking-widest uppercase">الاتصالات والإنترنت</span>
+                </div>
+            </a>
+
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+                <a href="#hero" class="text-gray-300 hover:text-cyan-400 transition-colors">الرئيسية</a>
+                <a href="#packages" class="text-gray-300 hover:text-cyan-400 transition-colors">الباقات المتاحة</a>
+                <a href="#features" class="text-gray-300 hover:text-cyan-400 transition-colors">المميزات</a>
+                <a href="#contact" class="text-gray-300 hover:text-cyan-400 transition-colors">تواصل معنا</a>
+            </nav>
+
+            <div class="flex items-center gap-3">
+                <a href="https://chat.whatsapp.com/GW2MZGbdLjzDkOcMT8SYFu" target="_blank" rel="noopener" class="hidden lg:inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-emerald-500/15 hover:bg-emerald-500/25 border border-emerald-500/40 text-emerald-400 font-bold text-xs transition-all">
+                    <i class="fa-solid fa-users text-sm"></i>
+                    <span>جروب العروض</span>
+                </a>
+                <a href="#packages" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 hover:opacity-90 text-slate-950 font-bold text-sm shadow-lg shadow-cyan-500/20 transition-all">
+                    <span>اختر باقتك</span>
+                    <i class="fa-solid fa-arrow-left"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section id="hero" class="relative py-16 lg:py-24 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-3xl mx-auto space-y-6">
+                
+                <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black text-white leading-tight">
+                    عالم السرعة الفائقة بين يديك مع <span class="bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent">Net Zone</span>
+                </h1>
+
+                <p class="text-gray-300 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto font-light">
+                    اختر الباقة المناسبة لاحتياجاتك واستمتع بأعلى سرعات الإنترنت وأفضل المزايا المتكاملة من دقائق ومكالمات دولية ورسائل لكل الشبكات.
+                </p>
+
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs sm:text-sm font-semibold">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <span>نظام الأمان والشفافية: يتم تفعيل الباقة أولاً على خطك ثم تقوم بالدفع بعد التفعيل</span>
+                </div>
+
+                <div class="flex flex-wrap items-center justify-center gap-4 pt-4">
+                    <a href="#packages" class="px-8 py-3.5 rounded-xl bg-gradient-to-r from-cyan-500 via-blue-600 to-purple-600 hover:opacity-90 text-white font-bold text-base shadow-lg shadow-cyan-500/25 transition-all">
+                        تصفح الباقات الآن
+                    </a>
+
+                    <a href="https://chat.whatsapp.com/GW2MZGbdLjzDkOcMT8SYFu" target="_blank" rel="noopener" class="px-8 py-3.5 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-500 hover:opacity-90 text-white font-black text-base shadow-neon-group transition-all flex items-center gap-2.5 border border-emerald-400/50">
+                        <i class="fa-solid fa-users text-xl text-emerald-200"></i>
+                        <span>الانضمام لمجموعة العروض والباقات</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم تسجيل الدخول برقم الهاتف ورمز التحقق (OTP) المتصل بالـ Backend -->
+    <section id="auth-section" class="py-8 max-w-md mx-auto px-4 w-full">
+        <div class="glass-card rounded-2xl p-6 border border-cyan-500/30 shadow-neon-cyan">
+            <h3 class="text-xl font-bold text-white mb-4 text-center">تسجيل الدخول برقم الهاتف</h3>
+            
+            <!-- خطوة إدخال رقم الهاتف -->
+            <div id="step-phone" class="space-y-4">
+                <div>
+                    <label class="block text-xs font-semibold text-gray-300 mb-1">رقم الهاتف:</label>
+                    <input type="text" id="phone-input" placeholder="010xxxxxxxx" class="w-full bg-slate-900/90 border border-gray-700 rounded-xl px-4 py-3 text-base text-white focus:outline-none focus:border-cyan-400 transition-colors text-right" dir="ltr">
+                </div>
+                <button onclick="sendOtp()" class="w-full py-3 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 text-slate-950 font-bold text-sm transition-all shadow-lg hover:opacity-90 cursor-pointer">إرسال رمز التحقق</button>
+            </div>
+
+            <!-- خطوة إدخال رمز التحقق -->
+            <div id="step-otp" class="space-y-4 hidden mt-4">
+                <div>
+                    <label class="block text-xs font-semibold text-gray-300 mb-1">أدخل رمز التحقق (OTP):</label>
+                    <input type="text" id="otp-input" placeholder="1234" class="w-full bg-slate-900/90 border border-gray-700 rounded-xl px-4 py-3 text-base text-white focus:outline-none focus:border-cyan-400 transition-colors text-right" dir="ltr">
+                </div>
+                <button onclick="verifyOtp()" class="w-full py-3 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-600 text-white font-bold text-sm transition-all shadow-lg hover:opacity-90 cursor-pointer">تأكيد الرمز</button>
+            </div>
+            
+            <p id="auth-msg" class="mt-3 text-sm text-center font-semibold"></p>
+        </div>
+    </section>
+
+    <!-- قسم عرض الباقات (يظهر مخفياً حتى يتم تسجيل الدخول بنجاح) -->
+    <section id="packages" class="py-12 lg:py-20 relative hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center space-y-3 mb-12">
+                <h2 class="text-2xl sm:text-4xl font-extrabold text-white">الباقات المتاحة للاشتراك</h2>
+                <p class="text-gray-400 text-sm sm:text-base max-w-xl mx-auto">
+                    باقات متنوعة تناسب كافة الاستخدامات اليومية والشخصية بأفضل قيمة وأعلى كفاءة.
+                </p>
+                <div class="inline-block mt-2">
+                    <span id="user-phone-display" class="text-xs bg-cyan-500/20 text-cyan-300 border border-cyan-500/40 px-3 py-1 rounded-full font-bold"></span>
+                </div>
+            </div>
+
+            <div id="packagesContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"></div>
+            <p id="sub-msg" class="mt-6 text-center font-semibold text-sm"></p>
+        </div>
+    </section>
+
+    <section id="features" class="py-16 bg-slate-900/40 border-y border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="glass-card p-6 rounded-2xl flex items-start gap-4">
+                    <div class="p-3 bg-cyan-500/10 border border-cyan-500/30 rounded-xl text-cyan-400 shrink-0">
+                        <i class="fa-solid fa-bolt-lightning text-2xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold text-white mb-1">تغطية فائقة السرعة</h3>
+                        <p class="text-sm text-gray-400">اتصال إنترنت مستقر وسريع يعتمد عليه في جميع الأوقات بأحدث التقنيات.</p>
+                    </div>
+                </div>
+
+                <div class="glass-card p-6 rounded-2xl flex items-start gap-4">
+                    <div class="p-3 bg-emerald-500/10 border border-emerald-500/30 rounded-xl text-emerald-400 shrink-0">
+                        <i class="fa-solid fa-headset text-2xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold text-white mb-1">دعم متواصل</h3>
+                        <p class="text-sm text-gray-400">فريق خدمة العملاء متواجد دائماً للرد على كافة استفساراتكم وتفعيل طلباتكم بسرعة.</p>
+                    </div>
+                </div>
+
+                <div class="glass-card p-6 rounded-2xl flex items-start gap-4">
+                    <div class="p-3 bg-purple-500/10 border border-purple-500/30 rounded-xl text-purple-400 shrink-0">
+                        <i class="fa-solid fa-gem text-2xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold text-white mb-1">مزايا متكاملة</h3>
+                        <p class="text-sm text-gray-400">دقائق محلية، رسائل لجميع الشبكات ودقائق دولية مدمجة في باقة واحدة.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal تفاصيل إضافية للواتساب أو البريد عند الحاجة -->
+    <div id="subModal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm">
+        <div class="glass-card w-full max-w-md rounded-2xl p-6 border border-gray-700 relative shadow-2xl max-h-[90vh] overflow-y-auto">
+            <button id="closeModalBtn" class="absolute top-4 left-4 text-gray-400 hover:text-white transition-colors cursor-pointer p-2" aria-label="إغلاق">
+                <i class="fa-solid fa-xmark text-xl"></i>
+            </button>
+
+            <div class="text-center mb-6">
+                <div class="w-12 h-12 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 flex items-center justify-center mx-auto mb-3">
+                    <i class="fa-solid fa-paper-plane text-xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white">تأكيد إرسال الطلب</h3>
+                <p id="modalPackageName" class="text-cyan-400 font-semibold text-sm mt-1">باقة --</p>
+            </div>
+
+            <form id="subscriptionForm" onsubmit="return false;" class="space-y-4">
+                <input type="hidden" id="selectedPackageInput" name="package">
+
+                <div>
+                    <label class="block text-xs font-semibold text-gray-300 mb-1">الاسم بالكامل</label>
+                    <input type="text" id="custName" placeholder="أدخل اسمك الكريم" class="w-full bg-slate-900/90 border border-gray-700 rounded-xl px-4 py-3 text-base text-white focus:outline-none focus:border-cyan-400 transition-colors">
+                </div>
+
+                <div>
+                    <label class="block text-xs font-semibold text-gray-300 mb-1">اختر رقم الواتساب للتواصل مع الدعم</label>
+                    <div class="grid grid-cols-2 gap-3">
+                        <label class="flex items-center gap-2 p-3 rounded-xl bg-slate-900/80 border border-gray-700 hover:border-emerald-500/50 cursor-pointer text-xs text-gray-300">
+                            <input type="radio" name="targetPhoneRadio" value="201140877868" checked class="accent-emerald-500 w-4 h-4">
+                            <span>الخط الأول (01140877868)</span>
+                        </label>
+                        <label class="flex items-center gap-2 p-3 rounded-xl bg-slate-900/80 border border-gray-700 hover:border-emerald-500/50 cursor-pointer text-xs text-gray-300">
+                            <input type="radio" name="targetPhoneRadio" value="201140238183" class="accent-emerald-500 w-4 h-4">
+                            <span>الخط الثاني (01140238183)</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-semibold text-gray-300 mb-1">ملاحظات أو استفسار (اختياري)</label>
+                    <textarea id="custNotes" rows="2" placeholder="أي تفاصيل أخرى تريد إضافتها..." class="w-full bg-slate-900/90 border border-gray-700 rounded-xl px-4 py-3 text-base text-white focus:outline-none focus:border-cyan-400 transition-colors"></textarea>
+                </div>
+
+                <div class="pt-2 space-y-2">
+                    <button type="button" id="whatsappBtn" class="w-full py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm transition-all shadow-lg shadow-emerald-600/20 flex items-center justify-center gap-2 cursor-pointer">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                        <span>متابعة الطلب عبر الواتساب</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer id="contact" class="bg-slate-950 border-t border-gray-800/80 py-10 mt-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
+            <div class="flex items-center justify-center gap-2" dir="ltr">
+                <span class="text-xl font-bold tracking-wider text-white">NET ZONE</span>
+                <i class="fa-solid fa-cube text-cyan-400 text-xl"></i>
+            </div>
+
+            <p class="text-sm text-gray-400 max-w-md mx-auto">
+                مزود خدمة الإنترنت والاتصالات المعتمد. نضمن لك دائماً السرعة والأمان والتغطية المتكاملة.
+            </p>
+
+            <div class="max-w-md mx-auto p-4 rounded-2xl bg-gradient-to-r from-emerald-950/60 to-teal-950/60 border border-emerald-500/30 flex items-center justify-between gap-4 text-right">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-xl bg-emerald-500/20 flex items-center justify-center text-emerald-400 text-xl border border-emerald-500/30">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-sm font-bold text-white">جروب الواتساب الرسمي</h4>
+                        <p class="text-xs text-emerald-300/80">لمتابعة أحدث العروض والخصومات</p>
+                    </div>
+                </div>
+                <a href="https://chat.whatsapp.com/GW2MZGbdLjzDkOcMT8SYFu" target="_blank" rel="noopener" class="px-4 py-2 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-black text-xs transition-colors shrink-0">
+                    انضمام الآن
+                </a>
+            </div>
+
+            <div class="flex justify-center items-center gap-4 pt-2">
+                <a href="https://wa.me/201140877868" target="_blank" rel="noopener" class="w-10 h-10 rounded-full glass-card flex items-center justify-center text-gray-300 hover:text-emerald-400 hover:border-emerald-400 transition-colors" title="واتساب 1">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a href="https://wa.me/201140238183" target="_blank" rel="noopener" class="w-10 h-10 rounded-full glass-card flex items-center justify-center text-gray-300 hover:text-emerald-400 hover:border-emerald-400 transition-colors" title="واتساب 2">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a href="https://chat.whatsapp.com/GW2MZGbdLjzDkOcMT8SYFu" target="_blank" rel="noopener" class="w-10 h-10 rounded-full bg-emerald-500/20 border border-emerald-500/50 flex items-center justify-center text-emerald-400 hover:bg-emerald-500 hover:text-slate-950 transition-all shadow-neon-group" title="مجموعة الواتساب">
+                    <i class="fa-solid fa-users"></i>
+                </a>
+                <a href="mailto:alikhalf001@gmail.com" class="w-10 h-10 rounded-full glass-card flex items-center justify-center text-gray-300 hover:text-red-400 hover:border-red-400 transition-colors" title="البريد الإلكتروني">
+                    <i class="fa-brands fa-google"></i>
+                </a>
+                <a href="tel:01140238183" class="w-10 h-10 rounded-full glass-card flex items-center justify-center text-gray-300 hover:text-purple-400 hover:border-purple-400 transition-colors" title="اتصال مباشر">
+                    <i class="fa-solid fa-phone"></i>
+                </a>
+            </div>
+
+            <div class="border-t border-gray-800/60 pt-6 text-xs text-gray-500">
+                جميع الحقوق محفوظة &copy; Net Zone <span id="year"></span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- سكربت التحكم وربط الـ Backend بالـ Frontend -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const yearSpan = document.getElementById('year');
+            if (yearSpan) {
+                yearSpan.textContent = new Date().getFullYear();
+            }
+
+            let userPhone = "";
+
+            // 1. إرسال رمز التحقق (OTP)
+            window.sendOtp = async function() {
+                const phone = document.getElementById('phone-input').value.trim();
+                const msgElement = document.getElementById('auth-msg');
+                
+                if (!phone || !/^[0-9]{11}$/.test(phone)) {
+                    msgElement.style.color = "#EF4444";
+                    msgElement.innerText = "الرجاء إدخال رقم هاتف صحيح مكون من 11 رقماً";
+                    return;
+                }
+
+                try {
+                    const response = await fetch('/api/auth/send-otp', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ phone })
+                    });
+                    
+                    const data = await response.json();
+                    
+                    if (response.ok) {
+                        userPhone = phone;
+                        msgElement.style.color = "#10B981";
+                        msgElement.innerText = data.message || "تم إرسال الرمز بنجاح";
+                        
+                        document.getElementById('step-phone').classList.add('hidden');
+                        document.getElementById('step-otp').classList.remove('hidden');
+                    } else {
+                        msgElement.style.color = "#EF4444";
+                        msgElement.innerText = data.error || "حدث خطأ ما";
+                    }
+                } catch (error) {
+                    msgElement.style.color = "#EF4444";
+                    msgElement.innerText = "تعذر الاتصال بالسيرفر";
+                }
+            }
+
+            // 2. التحقق من الرمز وتسجيل الدخول
+            window.verifyOtp = async function() {
+                const otp = document.getElementById('otp-input').value.trim();
+                const msgElement = document.getElementById('auth-msg');
+
+                if (!otp) {
+                    msgElement.style.color = "#EF4444";
+                    msgElement.innerText = "الرجاء إدخال رمز التحقق";
+                    return;
+                }
+
+                try {
+                    const response = await fetch('/api/auth/verify-otp', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ phone: userPhone, otp })
+                    });
+
+                    const data = await response.json();
+
+                    if (response.ok) {
+                        msgElement.style.color = "#10B981";
+                        msgElement.innerText = "تم تسجيل الدخول بنجاح!";
+                        
+                        document.getElementById('auth-section').classList.add('hidden');
+                        document.getElementById('packages').classList.remove('hidden');
+                        document.getElementById('user-phone-display').innerText = `الهاتف المسجل: ${userPhone}`;
+                        
+                        loadPackages();
+                    } else {
+                        msgElement.style.color = "#EF4444";
+                        msgElement.innerText = data.error || "الرمز غير صحيح";
+                    }
+                } catch (error) {
+                    msgElement.style.color = "#EF4444";
+                    msgElement.innerText = "تعذر الاتصال بالسيرفر";
+                }
+            }
+
+            // 3. جلب الباقات من قاعدة البيانات عبر الـ API
+            async function loadPackages() {
+                const packagesList = document.getElementById('packagesContainer');
+                
+                try {
+                    const response = await fetch('/api/packages');
+                    const packages = await response.json();
+                    
+                    packagesList.innerHTML = "";
+                    
+                    if (!packages || packages.length === 0) {
+                        packagesList.innerHTML = "<p class='text-gray-400 text-center col-span-full'>لا توجد باقات متاحة حالياً.</p>";
+                        return;
+                    }
+
+                    packages.forEach(pkg => {
+                        const pkgCard = document.createElement('div');
+                        pkgCard.className = "glass-card rounded-2xl p-6 relative flex flex-col justify-between transition-all duration-300 hover:-translate-y-1 border-t-4 border-cyan-500 shadow-neon-cyan";
+                        pkgCard.innerHTML = `
+                            <div>
+                                <div class="flex items-center justify-between mb-4">
+                                    <span class="text-xs font-bold px-3 py-1 rounded-full border bg-cyan-500/20 text-cyan-300 border-cyan-500/40">${pkg.name}</span>
+                                    <i class="fa-solid fa-wifi text-cyan-400 text-xl"></i>
+                                </div>
+                                <div class="text-center py-4 border-b border-gray-800">
+                                    <div class="text-3xl font-black text-white mb-1">${pkg.quota || pkg.name}</div>
+                                    <div class="text-2xl font-bold text-cyan-400">${pkg.price} <span class="text-sm font-normal text-gray-400">ج.م / شهرياً</span></div>
+                                </div>
+                                <div class="my-4 text-xs font-bold text-gray-400 uppercase tracking-wider text-center bg-slate-950/40 py-1.5 rounded-lg border border-gray-800">
+                                    سرعة عالية ومزايا متكاملة
+                                </div>
+                                <ul class="space-y-3 text-sm text-gray-300 mb-6">
+                                    <li class="flex items-center justify-between">
+                                        <span class="flex items-center gap-2"><i class="fa-solid fa-gauge-high text-cyan-400 text-xs"></i> <span>السرعة:</span></span>
+                                        <span class="font-bold text-white">${pkg.speed || 'فائقة'}</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button onclick="subscribe('${pkg._id}', '${pkg.name}')" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 hover:opacity-90 text-slate-950 font-bold transition-all shadow-md flex items-center justify-center gap-2 cursor-pointer">
+                                <span>اشتراك الآن</span>
+                                <i class="fa-solid fa-bolt text-xs"></i>
+                            </button>
+                        `;
+                        packagesList.appendChild(pkgCard);
+                    });
+                } catch (error) {
+                    packagesList.innerHTML = "<p class='text-red-500 text-center col-span-full'>فشل في تحميل الباقات من السيرفر.</p>";
+                }
+            }
+
+            // 4. الاشتراك في الباقة وحفظها في قاعدة البيانات
+            window.subscribe = async function(packageId, packageName) {
+                const subMsg = document.getElementById('sub-msg');
+
+                try {
+                    const response = await fetch('/api/subscriptions/subscribe', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ phone: userPhone, packageId })
+                    });
+
+                    const data = await response.json();
+
+                    if (response.ok) {
+                        subMsg.style.color = "#10B981";
+                        subMsg.innerText = `✅ تم الاشتراك في (${packageName}) بنجاح! تاريخ الانتهاء: ` + new Date(data.subscription.expiresAt).toLocaleDateString('ar-EG');
+                        
+                        // فتح نافذة إرسال التفاصيل للواتساب اختيارياً
+                        openModal(packageName);
+                    } else {
+                        subMsg.style.color = "#EF4444";
+                        subMsg.innerText = data.error || "حدث خطأ أثناء الاشتراك";
+                    }
+                } catch (error) {
+                    subMsg.style.color = "#EF4444";
+                    subMsg.innerText = "تعذر الاتصال بالسيرفر أثناء محاولة الاشتراك";
+                }
+            }
+
+            // إدارة المودال (Modal)
+            const modal = document.getElementById('subModal');
+            const nameElem = document.getElementById('modalPackageName');
+            const inputElem = document.getElementById('selectedPackageInput');
+
+            function openModal(packageName) {
+                if (!modal || !nameElem) return;
+                nameElem.textContent = `الباقة المفعلة: ${packageName}`;
+                if(inputElem) inputElem.value = packageName;
+                modal.classList.remove('hidden');
+                document.body.style.overflow = 'hidden';
+            }
+
+            function closeModal() {
+                if (!modal) return;
+                modal.classList.add('hidden');
+                document.body.style.overflow = '';
+            }
+
+            const closeBtn = document.getElementById('closeModalBtn');
+            if (closeBtn) {
+                closeBtn.addEventListener('click', closeModal);
+            }
+
+            window.addEventListener('click', (event) => {
+                if (event.target === modal) {
+                    closeModal();
+                }
+            });
+
+            const whatsappBtn = document.getElementById('whatsappBtn');
+            if (whatsappBtn) {
+                whatsappBtn.addEventListener('click', () => {
+                    const selectedPackage = inputElem ? inputElem.value : '';
+                    const nameField = document.getElementById('custName');
+                    const name = nameField ? nameField.value.trim() : '';
+                    const notesField = document.getElementById('custNotes');
+                    const notes = notesField ? notesField.value.trim() : '';
+                    const radioChecked = document.querySelector('input[name="targetPhoneRadio"]:checked');
+                    const selectedPhone = radioChecked ? radioChecked.value : '201140877868';
+
+                    let text = `مرحباً Net Zone ، لقد قمت بالاشتراك في الخدمة:\n\n`;
+                    text += `📌 *تفاصيل الطلب:*\n`;
+                    text += `• *الباقة:* ${selectedPackage}\n`;
+                    text += `• *رقم الهاتف:* ${userPhone}\n`;
+                    if (name) text += `• *الاسم:* ${name}\n`;
+                    if (notes) text += `• *ملاحظات:* ${notes}\n`;
+
+                    const whatsappUrl = `https://wa.me/${selectedPhone}?text=${encodeURIComponent(text)}`;
+                    closeModal();
+                    window.open(whatsappUrl, '_blank');
+                });
+            }
+        });
+    </script>
+</body>
+</html>
