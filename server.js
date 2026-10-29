@@ -5,13 +5,11 @@ require('dotenv').config();
 
 const app = express();
 
-// Middleware لقراءة البيانات بصيغة JSON
+// Middleware
 app.use(express.json());
-
-// ربط مجلد الواجهة الأمامية (public) لخدمة ملفات الـ HTML والـ JS
 app.use(express.static(path.join(__dirname, 'public')));
 
-// الاتصال بقاعدة بيانات MongoDB Atlas
+// الاتصال بقاعدة البيانات
 mongoose.connect(process.env.MONGO_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true
@@ -19,17 +17,21 @@ mongoose.connect(process.env.MONGO_URI, {
 .then(() => console.log('✅ Connected to MongoDB Atlas'))
 .catch((err) => console.error('❌ MongoDB connection error:', err));
 
-// استيراد مسارات الـ API
+// استيراد المسارات
 const authRoutes = require('./routes/auth');
 const packagesRoutes = require('./routes/packages');
 const subscriptionsRoutes = require('./routes/subscriptions');
 
-// استخدام المسارات
+// تسجيل المسارات
 app.use('/api/auth', authRoutes);
 app.use('/api/packages', packagesRoutes);
 app.use('/api/subscriptions', subscriptionsRoutes);
 
-// تشغيل السيرفر على البورت المحدد أو 5000 افتراضياً
+// Catch-all للملف الرئيسي (تم التصحيح هنا)
+app.get(/.*/, (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
+
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
     console.log(`🚀 Server is running on port ${PORT}`);
